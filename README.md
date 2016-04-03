@@ -1,37 +1,9 @@
-About the OPNsense tools
+About the opensense tools
 ========================
 
 In conjunction with src.git, ports.git, core.git and plugins.git they
-create sets, packages and images for the OPNsense project.  The license
-is a standard BSD 2-Clause as reproduced here for your convenience:
-
-    Copyright (c) 2014-2016 Franco Fichtner <franco@opnsense.org>
-    Copyright (c) 2004-2011 Scott Ullrich <sullrich@gmail.com>
-    Copyright (c) 2005 Poul-Henning Kamp <phk@FreeBSD.org>
-    All rights reserved.
-
-    Redistribution and use in source and binary forms, with or without
-    modification, are permitted provided that the following conditions
-    are met:
-    
-    1. Redistributions of source code must retain the above copyright
-       notice, this list of conditions and the following disclaimer.
-    
-    2. Redistributions in binary form must reproduce the above copyright
-       notice, this list of conditions and the following disclaimer in the
-       documentation and/or other materials provided with the distribution.
-    
-    THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
-    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-    ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
-    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-    OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-    HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-    LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-    OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-    SUCH DAMAGE.
+create sets, packages and images for the opensense project.  The license
+is a standard GPL v3 license.
 
 Setting up a build system
 =========================
@@ -44,11 +16,11 @@ to grab the repositories (overwriting standard ports and src):
     # pkg install git
     # cd /usr
     # rm -rf src ports
-    # git clone https://github.com/opnsense/plugins
-    # git clone https://github.com/opnsense/ports
-    # git clone https://github.com/opnsense/tools
-    # git clone https://github.com/opnsense/core
-    # git clone https://github.com/opnsense/src
+    # git clone https://github.com/opensense/plugins
+    # git clone https://github.com/opensense/ports
+    # git clone https://github.com/opensense/tools
+    # git clone https://github.com/opensense/core
+    # git clone https://github.com/opensense/src
     # cd tools
 
 TL;DR
@@ -76,7 +48,7 @@ Available build options are:
 * CONFIG: 	reads the below from the specified file
 * FLAVOUR:	"OpenSSL" (default), "LibreSSL"
 * MIRRORS:	a list of mirrors to prefetch sets from
-* NAME:		"OPNsense" (default)
+* NAME:		"opensense" (default)
 * PRIVKEY:	the private key for signing sets
 * PUBKEY:	the public key for signing sets
 * SETTINGS:	the name of the selected settings in config/
